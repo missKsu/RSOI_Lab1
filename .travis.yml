@@ -1,10 +1,12 @@
 language: go
-
 go:
-  - "1.x"
-  - "1.8"
-  - "1.10.x"
-  - master
-
+- 1.x
+- '1.8'
+- 1.10.x
+- master
 script:
-  - go build
+- go build
+deploy:
+  provider: heroku
+  api_key:
+    secure: cbJsXFjQ2rop+mhTaDQmhXVeL59sXc5erm2RTMdL2CRglqIThZ/80UIX4iGi94+IJ0t6mSaijj9Gj51hAJcvx8eifREjK0NWDe3/x2nM1xgMsrM2RUE0Unp8UykmBMpcnYbKiC53JMSqn8mHoIwWt2h54ZMhxjC9avHFv1jZ/KhpXd0tLZLBhL7pwwfR1PaLR3yGf9Sg0JL25qSnpKgJlhOZG5W+cjOTNkGAS8nsHsGDbdIXHrDvLtRBUaJ8XFKT1TBXBve5ILmrucX7WcJniRZUEFK18TCLi0rRQR9F1I2nhd6br2ySsfPZqwceHgUpLWNDwJkZ1JtAK61fngJOOI0fGG9UTjiKCQ3KuY/FXnH1Ime6kBcf9gzPN7D61i39Ro+DqWEIR4EgaIfU4NAHRYfTbBENjiL2SHqeXHmt81MqMFP/7lKyTliTyFIBDuYUbc6XSHhyaQ9AzxnYr0iheQkpqTtMChd1t40FL/1SwDP+YGrDakzQvh1QMnTGNW/Hdvawjf8OmXcM3nrXYu3PnxDWNB7Oll1sLnAv0FzaOSAteOzdbuLG5n5wpl4bcz/cJ+cpEoakoa64o2VkwKz/6ASES+hx8NstyK3dtmOlyxpr7i1Nihl2kw/u58olEw3WFBKFqCMJYldBDwSOlJroaizJ0cw+EAPcK1dlrnEWUTk=
